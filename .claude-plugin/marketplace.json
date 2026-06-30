@@ -1,0 +1,39 @@
+{
+  "name": "x-skills",
+  "owner": {
+    "name": "Serge Bulaev",
+    "url": "https://github.com/sergebulaev"
+  },
+  "metadata": {
+    "description": "Claude Code and Codex skills for X (Twitter) growth: single-tweet writing, long-form thread building, AI-tell humanizer with bundled pre-publish audit, viral hook extraction, reply and quote-tweet drafting, and weekly content planning. Tweets and threads publish through the Publora API."
+  },
+  "plugins": [
+    {
+      "name": "x-skills",
+      "source": "./",
+      "description": "Bundle of 6 X (Twitter) marketing skills for Claude Code and Codex with X-native hook formulas, single-tweet and auto-thread writing, a unified humanizer (rewrite plus `--mode audit` pre-publish check), viral hook extraction, reply and quote-tweet drafting, and a weekly content planner. Tweets and threads ship via Publora, which auto-splits long content into numbered threads.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serge Bulaev",
+        "url": "https://github.com/sergebulaev"
+      },
+      "homepage": "https://github.com/sergebulaev/x-skills",
+      "license": "MIT",
+      "keywords": [
+        "x",
+        "twitter",
+        "marketing",
+        "social-media",
+        "content-creation",
+        "claude-skills",
+        "codex-skills",
+        "anthropic",
+        "ai-agents",
+        "personal-branding",
+        "threads",
+        "viral-content"
+      ],
+      "category": "productivity"
+    }
+  ]
+}
