@@ -5,6 +5,19 @@ Synthesized from the open-sourced X recommendation algorithm (the
 engineering account, and observed creator data. Numbers marked "reported" are
 community-measured, not officially confirmed.
 
+## Contents
+
+- Signal weights (relative reach impact)
+- The first 30-60 minutes
+- Reach suppressors (avoid)
+- Reach amplifiers
+- Character and format limits
+- Threads
+- Reply vs quote tweet
+- Timing
+- Bookmarks are the underrated lever
+- Pre-publish checklist
+
 ## Signal weights (relative reach impact)
 
 X's ranker scores predicted engagement, and the engagement types are not equal.

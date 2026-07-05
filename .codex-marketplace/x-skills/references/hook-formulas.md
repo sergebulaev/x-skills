@@ -21,6 +21,23 @@ Publora auto-splits any long `content` into a numbered `(1/N)` thread at
 sentence boundaries, so you can write a thread as flowing prose or break it
 yourself with `---` separators.
 
+## Contents
+
+- X1 - One-Liner Contrarian
+- X2 - Data-Point Hook
+- X3 - Build-in-Public Confession
+- X4 - Quote-Tweet Dunk-with-Value
+- X5 - Mini-List Tweet
+- X6 - Relatable Cold-Open
+- X7 - Listicle-Thread Promise
+- X8 - Story Thread
+- X9 - Curiosity-Gap Thread Opener
+- X10 - How-I Teardown Thread
+- Engagement-goal split
+- Single tweet vs thread: pick the container first
+- Hook micro-rules (X-specific)
+- Never do
+
 ---
 
 ## X1 - One-Liner Contrarian
