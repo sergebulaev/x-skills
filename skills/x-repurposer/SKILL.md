@@ -1,6 +1,6 @@
 ---
 name: x-repurposer
-description: Repurpose existing content into a native X (Twitter) post or thread. Take a LinkedIn post, blog paragraph, YouTube script, newsletter, or a piece that worked on another platform, and rewrite it for X: re-hook for the no-fold first line, refit to 280 chars or a thread, apply a 2026 X formula, strip off-platform artifacts, run the humanizer, publish via Publora on approval. Use to adapt content across platforms into X. Not for writing from scratch (use x-post-writer or x-thread-builder), not for auditing a finished draft (use x-humanizer --mode audit).
+description: Repurpose existing content into a native X (Twitter) post or thread. Take a LinkedIn post, blog, YouTube script, or newsletter and rewrite it for X: re-hook for the no-fold first line, refit to 280 chars or a thread, strip off-platform artifacts, run the humanizer, publish via Publora on approval. Not for writing from scratch (use x-post-writer or x-thread-builder), not for auditing a draft (use x-humanizer --mode audit).
 ---
 
 # X Repurposer
