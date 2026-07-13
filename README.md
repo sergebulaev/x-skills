@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/PRs-welcome-F59E0B.svg" alt="PRs Welcome">
 </p>
 
-6 skills that help Claude Code and Codex write tweets, threads, and replies on X (Twitter) in your voice. They draft content, strip AI tells, and wait for your approval before anything gets published. No coding required.
+7 skills that help Claude Code and Codex write tweets, threads, and replies on X (Twitter) in your voice. They draft content, strip AI tells, and wait for your approval before anything gets published. No coding required.
 
 ## Install
 
@@ -124,7 +124,7 @@ Once installed, just ask Claude Code or Codex for help with X. The right skill a
 
 Every skill shows you a draft first and waits for your OK. Nothing gets posted without your approval.
 
-## The 6 skills
+## The 7 skills
 
 | Skill | What it does |
 |---|---|
@@ -134,6 +134,7 @@ Every skill shows you a draft first and waits for your OK. Nothing gets posted w
 | **Hook Extractor** | Reverse-engineers the hook from any viral tweet or thread. Maps it to one of the 10 X formulas and returns a blank template you can fill |
 | **Reply Drafter** | Drafts a reply or a value-add quote tweet for any tweet URL. Decides reply vs quote tweet. X has no LinkedIn-style thread flattening, so a reply is just a tweet |
 | **Content Planner** | Creates a weekly plan with a single-to-thread mix, per-day hooks, posting times, daily reply targets, and a goal-mix balance check |
+| **Repurposer** | Turns content from another platform (LinkedIn post, blog, YouTube script, newsletter) into a native X tweet or thread: re-hooks for the no-fold first line, refits to 280 or a thread, strips off-platform artifacts, runs the humanizer |
 
 ## How threads work on X
 
