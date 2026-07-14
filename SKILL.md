@@ -5,7 +5,7 @@ description: Plan, draft, audit, and publish posts and threads for X (Twitter). 
 
 # X (Twitter) Marketing Skills
 
-A bundle of 8 focused skills for X content ops in 2026. Each skill is
+A bundle of 9 focused skills for X content ops in 2026. Each skill is
 single-purpose, follows the draft then approval then publish pattern, and uses
 the [Publora API](https://publora.com) for posting tweets and threads.
 
@@ -19,6 +19,7 @@ the [Publora API](https://publora.com) for posting tweets and threads.
 - **Planning a week of X content** -> use `x-content-planner`
 - **Adapting content from another platform into a native X post or thread** -> use `x-repurposer`
 - **Auditing and rewriting your X profile (bio, name, header, pinned tweet)** -> use `x-profile-optimizer`
+- **Reading your X audience and niche from real data (your tweets, repliers, competitors, top tweets)** -> use `x-audience-insights`
 
 ## Core pattern
 

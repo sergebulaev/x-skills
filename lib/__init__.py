@@ -7,6 +7,7 @@ remain importable from their submodules but are not re-exported here.
 from .url_parser import parse_x_url
 from .publora_client import PubloraClient, PubloraError
 from .approval import render_approval_card
+from .apify_client import ApifyClient, ApifyError, ApifyAuthError
 from .backend_selector import (
     active_backend,
     manual_mode_message,
@@ -21,4 +22,7 @@ __all__ = [
     "active_backend",
     "manual_mode_message",
     "publish",
+    "ApifyClient",
+    "ApifyError",
+    "ApifyAuthError",
 ]
