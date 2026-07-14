@@ -40,7 +40,7 @@ making changes. Conventions here are mandatory unless the user asks otherwise.
 
 ## Skill bundle invariants
 
-- **Exactly 7 skills.** Adding requires merging or splitting elsewhere to stay at
+- **Exactly 8 skills.** Adding requires merging or splitting elsewhere to stay at
   6. The number is announced in plugin manifests and the README.
 - **Frontmatter `description:` target <= 400 chars** (some bundle-heavy skills
   land slightly higher when their scope is genuinely broad; keep under 510).
@@ -103,7 +103,7 @@ Run from repo root:
 ```bash
 python3 -c "from lib import publish, parse_x_url, PubloraClient; print('OK')"
 python3 scripts/sync_codex_marketplace.py
-ls skills/ | wc -l        # must equal 7
+ls skills/ | wc -l        # must equal 8
 python3 -m json.tool .codex-plugin/plugin.json >/dev/null
 python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
 python3 -m json.tool .claude-plugin/plugin.json >/dev/null
