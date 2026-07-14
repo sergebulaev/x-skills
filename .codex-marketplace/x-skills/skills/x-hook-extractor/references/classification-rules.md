@@ -21,6 +21,7 @@ features first, then score.
 | Quotes another tweet and adds a reframe or counter | X4 Quote-Tweet Value-Add |
 | A short numbered or bulleted list, one line per item, fits one tweet | X5 Mini-List Tweet |
 | A relatable shared moment with no setup, names a feeling | X6 Relatable Cold-Open |
+| A third party's absurd specific result ("A gym pays them $10,400/mo"), framed as anyone-could-copy | X11 Third-Person Case-Study Flex |
 
 ## Step 3: thread features (X7-X10)
 
@@ -38,6 +39,10 @@ features first, then score.
 - If two are within one feature of each other, return both with fit percentages.
 - A quote tweet that also delivers a list is X4 by container but borrows X5's
   structure; note both.
+- A number-led hook is X2 if the number is the point (abstract stat), X10 if it
+  is *your own* result with steps, and X11 if it is *someone else's* result
+  framed as copyable. When it names a person or third party plus a $ outcome,
+  prefer X11.
 
 ## Step 5: primary goal
 
@@ -45,8 +50,8 @@ Infer what the original optimized for from its shape and its visible metrics:
 
 | Shape | Likely goal |
 |---|---|
-| Sharp opinion, high reposts | reposts (X1, X4) |
-| List / framework / how-to, high bookmarks | bookmarks (X2, X5, X7, X10) |
+| Sharp opinion, high reposts | reposts (X1, X4, X11) |
+| List / framework / how-to, high bookmarks | bookmarks (X2, X5, X7, X10, X11) |
 | Personal metric / question, high replies | replies (X3, X9) |
 | Story / relatable, high likes | likes (X6, X8) |
 

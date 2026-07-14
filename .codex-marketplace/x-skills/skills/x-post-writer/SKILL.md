@@ -26,18 +26,21 @@ the first line, because X has no "see more" fold.
 | X4 | Quote-Tweet Dunk-with-Value | reposts | adding a layer to someone else's take (quote tweet) |
 | X5 | Mini-List Tweet | bookmarks | a scannable list that fits in one tweet |
 | X6 | Relatable Cold-Open | likes | a specific shared moment, no setup |
+| X11 | Third-Person Case-Study Flex | reposts | someone else's absurd, specific result as anyone-could-copy bait |
 
 Full skeletons in `../../references/hook-formulas.md`. For long-form tweetstorms
-(X7-X10), use `x-thread-builder`.
+(X7-X10), use `x-thread-builder`. X11 was validated as the top-recurring winning
+shape in a ~450-tweet corpus (July 2026); prefer it over a first-person "How I"
+when the result you are citing is someone else's.
 
 ### Pick by goal first
 
 | Goal | Reach for |
 |---|---|
 | Replies | X3, X1 |
-| Reposts | X1, X4 |
+| Reposts | X1, X4, X11 |
 | Likes | X6 |
-| Bookmarks | X2, X5 |
+| Bookmarks | X2, X5, X11 |
 
 ## Steps
 

@@ -1,4 +1,4 @@
-# 10 X (Twitter) Hook Formulas - 2026 Edition
+# 11 X (Twitter) Hook Formulas - 2026 Edition
 
 X rewards a different shape than LinkedIn. A single tweet has to land a
 complete punch in the first line, because there is no "see more" fold to buy
@@ -15,8 +15,8 @@ The four goals map to X's ranked signals:
 | **likes** | cheap affirmation, light reach | lowest-weight signal, but social proof for the next reader |
 | **bookmarks** | private saves (X's "save" signal) | bookmarks became a ranked signal in 2024 and correlate with high-value, reference-worthy content. Bookmark-bait wins frameworks, lists, and how-tos. |
 
-Formulas X1-X6 are **single-tweet** shapes (the whole idea fits in one tweet,
-or a 2-3 tweet micro-thread). X7-X10 are **thread** shapes (tweetstorms).
+Formulas X1-X6 and X11 are **single-tweet** shapes (the whole idea fits in one
+tweet, or a 2-3 tweet micro-thread). X7-X10 are **thread** shapes (tweetstorms).
 Publora auto-splits any long `content` into a numbered `(1/N)` thread at
 sentence boundaries, so you can write a thread as flowing prose or break it
 yourself with `---` separators.
@@ -33,6 +33,7 @@ yourself with `---` separators.
 - X8 - Story Thread
 - X9 - Curiosity-Gap Thread Opener
 - X10 - How-I Teardown Thread
+- X11 - Third-Person Case-Study Flex
 - Engagement-goal split
 - Single tweet vs thread: pick the container first
 - Hook micro-rules (X-specific)
@@ -85,6 +86,20 @@ A landing page that loads in 1.3s converts 2.4x better than one at 3.2s.
 
 Speed is not a UX nicety. It is a revenue line item.
 ```
+
+A corpus-corroborated variant (validated across ~450 top tweets, July 2026): a
+**big brand's specific spend plus a same-day consequence**. This shape traveled
+across several unrelated accounts, not one lucky post:
+
+```
+{Named company} spends {specific $ figure} a year on {thing}.
+
+{Yesterday / this week} they announced {the consequence}.
+```
+
+("Starbucks spends $400 million a year on software. Yesterday they announced
+they are moving off IBM and Microsoft." "Rockstar didn't spend $7.6 billion
+building a game. They built a world where the biggest audiences get paid first.")
 
 **Why:** A single hard number is the most bookmark-worthy unit on X. People save
 it to cite later. Odd, non-rounded figures (1.3s, $873.47, 2.4x) read as real
@@ -187,6 +202,18 @@ than a vague mood.
 The specificity is the whole job. Do not reach for ALL CAPS to add intensity, it
 reads as trying too hard.
 
+**Two corpus-observed variants of the cold-open** (both recurred among top
+performers, July 2026):
+
+- **Ironic day-in-the-life list.** A quoted aspirational archetype, then deadpan
+  bullets where the last one punctures it. `"Come with me on my 5am morning as a
+  24 year old in B2B SaaS sales" - run / grounding / performative meditation / ...`
+  This reads relatable but the format (quoted premise + comedy bullets) is
+  distinct. The mechanic is satire of a recognizable online genre.
+- **Meme juxtaposition.** One line whose whole payload is an unexpected pairing:
+  `What Viktor Gyokeres taught me about B2B sales`. `Marathon and B2B sales`.
+  The mechanic is incongruity, not recognition, and it over-indexes on reposts.
+
 ---
 
 ## X7 - Listicle-Thread Promise
@@ -282,13 +309,55 @@ Step {n}: {step name}
 {What to do, the specific tool or ratio, and the one mistake to avoid.}
 ```
 
-**Why:** "How I" beats "How to" on X by a wide margin, because first-person
-results carry proof. A no-paywall teardown of a real result is heavy
-bookmark-bait: people save it to run later. The number in tweet 1 ("in 14 days",
-"to 10k") is the credibility anchor.
+**Why:** "How I" beats "How to" on X because first-person results carry proof. A
+no-paywall teardown of a real result is heavy bookmark-bait: people save it to
+run later. The number in tweet 1 ("in 14 days", "to 10k") is the credibility
+anchor.
+
+**Corpus caveat (July 2026):** among ~450 top tweets, first-person "How I"
+teardowns were *rare* in real over-performers. What actually dominated was the
+third-person result flex (X11): narrating someone else's outcome. Reach for X10
+when the result is genuinely yours and provable; otherwise the same material
+travels further framed as X11. This reverses the LinkedIn-inherited rule.
 
 **Warning:** Vague steps ("be consistent", "add value") kill the save. Every
 step needs a concrete instruction someone could execute tomorrow.
+
+---
+
+## X11 - Third-Person Case-Study Flex
+
+**Goal: reposts and bookmarks.** Single tweet (or 2-3 tweet micro-thread). You
+narrate someone else's absurd, specific result, framed as an unfair advantage
+anyone could copy. This was the single most common winning shape in a ~450-tweet
+corpus (July 2026), and it sat in a blind spot between X2 (abstract stat) and
+X10 (first-person how-I).
+
+```
+{A person or faceless thing} {achieved an absurd, specific $ outcome} {doing something ordinary or sneaky}.
+
+{One line that sharpens the "how" into an anyone-could-do-this frame.}
+```
+
+Worked shapes (real corpus hooks):
+
+```
+A cruise channel with 59 videos makes $5,000/month from AdSense alone.
+
+He stopped paying $1,000/month for AI and built his own instead.
+```
+
+**Why:** The emotional pull is aspiration, not vulnerability. A third party's
+result lets the reader imagine the same win without the poster having to expose
+their own numbers. The specific, non-round figure ($10,400/month, 59 videos)
+does the credibility work; the second line converts it into a template the
+reader feels they could run.
+
+**Warning:** Many corpus examples tail into an engagement-bait CTA ("like this
+and I'll DM the breakdown", "repost to help your network"). The *hook* works;
+the CTA does not fit these skills' voice rules. Use the shape, skip the bait. And
+never invent the result or the person. A fabricated case study that gets
+checked in the replies costs more reach than it earned.
 
 ---
 
@@ -299,15 +368,16 @@ Pick the formula by what you want the post to earn, then narrow by topic.
 | Goal | Earned by | Formulas |
 |---|---|---|
 | **replies** | confessions, curiosity gaps, questions, takes worth arguing | X3 Build-in-Public, X9 Curiosity-Gap, X1 One-Liner Contrarian |
-| **reposts** | quotable opinions, value-add quote tweets, story payoffs | X1 One-Liner Contrarian, X4 Quote-Tweet, X8 Story Thread |
+| **reposts** | quotable opinions, value-add quote tweets, story payoffs, aspirational case studies | X1 One-Liner Contrarian, X4 Quote-Tweet, X8 Story Thread, X11 Third-Person Case-Study |
 | **likes** | relatable moments, emotional stories | X6 Relatable Cold-Open, X8 Story Thread |
-| **bookmarks** | lists, frameworks, hard numbers, repeatable how-tos | X5 Mini-List, X7 Listicle-Thread, X10 How-I Teardown, X2 Data-Point |
+| **bookmarks** | lists, frameworks, hard numbers, repeatable how-tos, aspirational case studies | X5 Mini-List, X7 Listicle-Thread, X10 How-I Teardown, X2 Data-Point, X11 Third-Person Case-Study |
 
 ## Single tweet vs thread: pick the container first
 
 | If the idea is... | Use | Why |
 |---|---|---|
 | One claim, one number, one moment | single tweet (X1, X2, X6) | a thread on a one-line idea reads as padding |
+| Someone else's absurd, specific result | single tweet (X11) | the number plus an anyone-could-do-this frame is the whole punch |
 | A scannable list, each item one line | single tweet (X5) | fits in 280, instantly bookmarkable |
 | A list where each item needs teaching | thread (X7) | give each item room |
 | A narrative with a build and a turn | thread (X8) | one beat per tweet controls pacing |
@@ -318,8 +388,10 @@ Pick the formula by what you want the post to earn, then narrow by topic.
 
 - **First line carries everything.** There is no fold. If the first tweet does
   not stop the scroll on its own, nothing downstream matters.
-- **"How I" beats "How to".** First-person results carry proof. Swap generic
-  instruction for lived experience wherever you can.
+- **"How I" beats "How to", but third-person beats "How I".** First-person
+  results carry proof over generic instruction, yet in a ~450-tweet corpus
+  (July 2026) narrating *someone else's* result (X11) out-pulled first-person
+  "How I" teardowns. Reach for the case study unless the win is provably yours.
 - **One specific number in tweet 1** raises tap-through and bookmark rate. 1.3s
   beats "fast". $873.47 beats "cheap".
 - **Open the loop in the thread opener, never close it.** Tweet 1 promises;
@@ -336,3 +408,6 @@ Pick the formula by what you want the post to earn, then narrow by topic.
 - Put an external link in tweet 1 of something you want to reach (links suppress
   reach; drop the link in a reply to your own tweet instead).
 - Quote-dunk on a small account. Add value or skip it.
+- Copy the like-for-DM / repost-to-help CTA that many viral case-study tweets
+  tail into. The hook shape (X11) travels; the engagement-bait closer violates
+  these skills' voice rules and reads as spam. Use the shape, drop the bait.
