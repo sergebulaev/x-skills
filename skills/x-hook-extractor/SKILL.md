@@ -45,7 +45,7 @@ the URL of the first tweet is best.
    paste the tweet or the full thread text. (If they later wire an Apify tweet
    actor, read it automatically.)
 3. **Detect the container.** One self-contained tweet, or a multi-tweet thread.
-4. **Classify against the 10 formulas** using features:
+4. **Classify against the 11 formulas** using features:
    - Single tweet: a flat contrarian claim (X1)? one hard number (X2)? a personal
      metric/confession (X3)? a quote tweet adding a layer (X4)? a one-line-per-
      item list (X5)? a relatable shared moment (X6)?
@@ -67,7 +67,7 @@ See `references/examples.md` for worked teardowns.
 
 ## Formulas reference
 
-See `../../references/hook-formulas.md` for the 10 canonical X formulas with full
+See `../../references/hook-formulas.md` for the 11 canonical X formulas with full
 skeletons and goal tags.
 
 ## Files

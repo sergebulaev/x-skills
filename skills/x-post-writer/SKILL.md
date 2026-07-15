@@ -96,7 +96,7 @@ rules:
 
 ## Resources
 
-- `../../references/hook-formulas.md` - all 10 X formula skeletons (X1-X6 are single-tweet)
+- `../../references/hook-formulas.md` - all 11 X formula skeletons (X1-X6 and X11 are single-tweet)
 - `../../references/algorithm-heuristics.md` - 2026 X ranking rules (signals, timing, limits)
 - `references/single-tweet-checklist.md` - the per-tweet scrub and fit list
 

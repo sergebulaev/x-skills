@@ -61,7 +61,7 @@ Global voice rules: see root `SKILL.md` Voice rules. Additional skill-specific r
 
 ## Resources
 
-- `../../references/hook-formulas.md` - the 10 X formula skeletons to re-hook with
+- `../../references/hook-formulas.md` - the 11 X formula skeletons to re-hook with
 - `../../references/algorithm-heuristics.md` - 2026 X ranking rules (length, timing, signals)
 
 ## Related skills
