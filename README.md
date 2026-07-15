@@ -131,7 +131,7 @@ Every skill shows you a draft first and waits for your OK. Nothing gets posted w
 | **Post Writer** | Drafts a single tweet (or short auto-thread) using a 2026 X hook formula picked by goal: replies, reposts, likes, or bookmarks. Respects the 280-char limit (25,000 on Premium) |
 | **Thread Builder** | Builds long-form tweetstorms (listicle, story, curiosity-gap, how-I teardown). Structures tweet 1 as a promise plus open loop, front-loads value, closes for the repost |
 | **Humanizer** | Strips em dashes, AI vocabulary ("leverage", "delve", "harness"), rule-of-three lists, and uniform tweet rhythm. Bundles a `--mode audit` pre-publish check (280-char fit, hook, hashtags, link placement) |
-| **Hook Extractor** | Reverse-engineers the hook from any viral tweet or thread. Maps it to one of the 10 X formulas and returns a blank template you can fill |
+| **Hook Extractor** | Reverse-engineers the hook from any viral tweet or thread. Maps it to one of the 11 X formulas and returns a blank template you can fill |
 | **Reply Drafter** | Drafts a reply or a value-add quote tweet for any tweet URL. Decides reply vs quote tweet. X has no LinkedIn-style thread flattening, so a reply is just a tweet |
 | **Content Planner** | Creates a weekly plan with a single-to-thread mix, per-day hooks, posting times, daily reply targets, and a goal-mix balance check |
 | **Repurposer** | Turns content from another platform (LinkedIn post, blog, YouTube script, newsletter) into a native X tweet or thread: re-hooks for the no-fold first line, refits to 280 or a thread, strips off-platform artifacts, runs the humanizer |
@@ -216,7 +216,7 @@ Every skill follows these rules automatically:
 
 ## Cross-cutting references
 
-- [`references/hook-formulas.md`](references/hook-formulas.md) - the 10 X hook formulas with skeletons and goal tags
+- [`references/hook-formulas.md`](references/hook-formulas.md) - the 11 X hook formulas with skeletons and goal tags
 - [`references/algorithm-heuristics.md`](references/algorithm-heuristics.md) - 2026 X ranking signals, timing, and limits
 - [`references/voice-rules.md`](references/voice-rules.md) - the canonical voice rules every skill inherits
 
