@@ -14,7 +14,18 @@
   <img src="https://img.shields.io/badge/PRs-welcome-F59E0B.svg" alt="PRs Welcome">
 </p>
 
-9 skills that help Claude Code and Codex write tweets, threads, and replies on X (Twitter) in your voice. They draft content, strip AI tells, and wait for your approval before anything gets published. No coding required.
+> **Part of the [linkedin-skills](https://github.com/sergebulaev/linkedin-skills) family (400+ stars).** Same voice engine and approve-before-publish flow, now for X. Also available for [Instagram](https://github.com/sergebulaev/instagram-skills) · [YouTube](https://github.com/sergebulaev/youtube-skills) · [TikTok](https://github.com/sergebulaev/tiktok-skills) · [Threads](https://github.com/sergebulaev/threads-skills) · [Facebook](https://github.com/sergebulaev/facebook-skills).
+
+**9 skills that turn Claude Code and Codex into your X (Twitter) content team.** They write tweets and threads in your voice with corpus-validated hooks, extract the hook from any viral tweet, draft replies and quote tweets, and plan a week of content. Every draft gets the AI tells stripped and waits for your approval before anything publishes. No coding required.
+
+Once installed, just ask Claude Code or Codex things like:
+
+- "Write a tweet about [topic]"
+- "Turn these notes into a thread"
+- "What's working in my niche on X right now? (reads real data via Apify)"
+- "Rewrite this tweet so it doesn't sound like AI"
+
+The right skill activates automatically. Then you review and approve.
 
 ## Install
 
