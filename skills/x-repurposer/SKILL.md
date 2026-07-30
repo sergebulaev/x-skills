@@ -20,6 +20,8 @@ Not for a blank-page draft (use `x-post-writer` for a tweet, `x-thread-builder` 
 
 ## How it works
 
+**Voice profile first (all drafts).** If `../../references/voice-profile.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `x-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules.
+
 1. **Take the source.** Any format: a post, a paragraph, a script, a caption, a transcript, a bullet list, a link to read. Ask for the source and the goal (replies / reposts / likes / bookmarks) if not given.
 2. **Extract the spine.** Strip the source platform's shell and pull out the one claim, the one story, or the one number worth keeping. Most repurposing fails because it keeps the words instead of the point.
 3. **Choose the container.** One claim or number -> single tweet. A teach or a build -> thread (hand structure to `x-thread-builder`'s shapes). A LinkedIn carousel or a listicle -> a thread, one slide per tweet, hook rebuilt. A long video -> a thread that delivers the payoff, not a summary.

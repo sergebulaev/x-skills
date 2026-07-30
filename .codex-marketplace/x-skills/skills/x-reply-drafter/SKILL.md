@@ -42,6 +42,8 @@ small account; add value or skip it.
 
 ## Steps
 
+**Voice profile first (all drafts).** If `../../references/voice-profile.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `x-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules.
+
 1. **Parse the URL.** `lib.url_parser.parse_x_url(url)` returns `handle`,
    `tweet_id`, `canonical_url`.
 2. **Read the context.** Ask the user to paste the target tweet and the relevant
