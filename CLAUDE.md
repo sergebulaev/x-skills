@@ -91,6 +91,8 @@ otherwise.
 - Don't name competing third-party schedulers in committed files. The bundle is
   positioned around the Publora write integration.
 
+- **Image layer (Pixfaro):** `lib/pixfaro_client.py`. Call `lib.illustrate(prompt, kind=...)` / `lib.refine(image_id, instruction)` (not the client directly); the returned hosted URL feeds `lib.publish(..., media_urls=[url])`. `refine` edits by `img_...` id (not URL); `aspect_ratio` is a ratio like `16:9` (not pixel dims). PIXFARO_TOKEN-or-manual fallback, keyed singleton + LRU cache; `overlay` brand fields come from `references/voice-profile.md` §6.
+
 ## Codex marketplace package
 
 - Codex requires marketplace entries to point at a nested plugin directory. The
@@ -113,7 +115,7 @@ otherwise.
 Run from repo root:
 
 ```bash
-python3 -c "from lib import publish, parse_x_url, PubloraClient; print('OK')"
+python3 -c "from lib import publish, illustrate, refine, PixfaroClient, parse_x_url, PubloraClient; print('OK')"
 python3 scripts/sync_codex_marketplace.py
 ls skills/ | wc -l        # must equal 9
 grep -rnP '\x{2014}|\x{2013}' skills/*/SKILL.md SKILL.md | grep -i '^.*description:'   # must be empty
