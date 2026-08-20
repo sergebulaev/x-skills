@@ -11,8 +11,8 @@
     {
       "name": "x-skills",
       "source": "./",
-      "description": "Bundle of 6 X (Twitter) marketing skills for Claude Code and Codex with X-native hook formulas, single-tweet and auto-thread writing, a unified humanizer (rewrite plus `--mode audit` pre-publish check), viral hook extraction, reply and quote-tweet drafting, and a weekly content planner. Tweets and threads ship via Publora, which auto-splits long content into numbered threads.",
-      "version": "1.0.16",
+      "description": "Bundle of 9 X (Twitter) marketing skills for Claude Code and Codex with X-native hook formulas, single-tweet and auto-thread writing, a unified humanizer (rewrite plus `--mode audit` pre-publish check), viral hook extraction, reply and quote-tweet drafting, and a weekly content planner. Tweets and threads ship via Publora, which auto-splits long content into numbered threads.",
+      "version": "1.0.17",
       "author": {
         "name": "Serge Bulaev",
         "url": "https://github.com/sergebulaev"
