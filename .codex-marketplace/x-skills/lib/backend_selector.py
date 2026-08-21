@@ -154,6 +154,7 @@ def publish(
                 platforms=platforms,
                 scheduled_time=kwargs.get("scheduled_time"),
                 platform_settings=kwargs.get("platform_settings"),
+                media_urls=kwargs.get("media_urls"),
             )
 
         raise ValueError(f"unknown publish kind: {kind!r}")

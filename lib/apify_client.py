@@ -65,10 +65,11 @@ def _retry(attempts: int = 3, base_delay: float = 0.6):
 
 def _tweet(t: dict) -> dict:
     au = t.get("author") or {}
+    handle = au.get("username") or au.get("userName") or au.get("screen_name")
     return {
         "id": t.get("id"),
         "text": t.get("text") or t.get("fullText"),
-        "author": au.get("username") or au.get("screen_name"),
+        "author": handle,
         "author_name": au.get("name"),
         "author_followers": au.get("followers"),
         "likes": t.get("likeCount", 0),
@@ -78,8 +79,8 @@ def _tweet(t: dict) -> dict:
         "is_reply": t.get("isReply", False),
         "conversation_id": t.get("conversationId"),
         "created_at": t.get("createdAt"),
-        "url": (f"https://x.com/{au.get('username')}/status/{t.get('id')}"
-                if au.get("username") and t.get("id") else None),
+        "url": (f"https://x.com/{handle}/status/{t.get('id')}"
+                if handle and t.get("id") else None),
     }
 
 
