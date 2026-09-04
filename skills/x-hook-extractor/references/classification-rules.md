@@ -67,6 +67,6 @@ Flag, do not copy:
 ## Output: the blank template
 
 Reproduce the winning formula's skeleton from
-`../../references/hook-formulas.md`, swapping the original's specifics for
+`../../../references/hook-formulas.md`, swapping the original's specifics for
 `{slot}` markers matched to the user's topic. Keep the open-loop mechanic intact
 for threads.

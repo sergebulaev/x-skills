@@ -28,7 +28,7 @@ agent (Claude Code, Codex, OpenClaw).
 2. **Craft the prompt.** Describe subject, composition, style, palette. Default
    to a clean professional look unless Voice & Brand Profile §6 sets a visual
    style. Do NOT bake the post's words into the art (use overlay).
-3. **Apply brand overlay (if profile has it).** Read `../../references/voice-profile.md`
+3. **Apply brand overlay (if profile has it).** Read `../../../references/voice-profile.md`
    §6. If a handle, brand color, or logo is set, pass an `overlay` so text/logo is
    composited pixel-exact (crisp even on a cheap model):
    ```python
