@@ -36,6 +36,7 @@ def copy_path(src: Path, dest: Path) -> None:
             ignore = shutil.ignore_patterns(
                 "__pycache__",
                 "*.pyc",
+                "check_markdown_references.py",
                 "sync_codex_marketplace.py",
             )
         shutil.copytree(src, dest, ignore=ignore)
