@@ -6,10 +6,14 @@ them. Skill-local "Hard rules" sections only add format-specific overrides
 
 ## Hard rules
 
-1. **No em dashes** (`—`), en dashes (`–`), or double dashes (`--`). Biggest AI
-   tell in 2026.
-2. **Use `..` as a soft pause** when you would reach for an em dash. Reads human
-   and matches how people actually type on X.
+1. **Em dashes (`—`) capped at one per tweet** (about 1 per 100 words in a
+   long Premium post), and none in a tweet that reads fine without one. The
+   character is no longer a tell (2026 models use fewer than humans); the
+   density is, and on X em dashes are rare in top tweets (11% of our corpus).
+   Replace the excess with a comma, colon or `..`, never a period. No en
+   dashes (`–`) between clauses, no double dashes (`--`).
+2. **Use `..` as a soft pause** when you would reach for a second em dash.
+   Reads human and matches how people actually type on X.
 3. **Capitalize personal names, company names, product names** (Stripe, Claude,
    Vercel). Lowercase a brand name and it reads as careless.
 4. **Sentence starts can be lowercase.** Lowercase openers are native to X voice
@@ -21,16 +25,28 @@ them. Skill-local "Hard rules" sections only add format-specific overrides
 7. **Don't hard-sell your own product** in a reply or a quote tweet on someone
    else's post. Describe what you do instead.
 
-## Vocabulary blacklist
+## Vocabulary markers (density-scored)
 
-Never use:
+Count these per tweet. One is English; two is borderline (flag it in the report, leave the words);
+three in one tweet reads as AI and the whole tweet gets rewritten (see `x-humanizer` V3).
+The durable 2026 set (significant, crucial, notably, particularly,
+comprehensive, insights, robust, leverage, foster, landscape, nuanced,
+streamline, elevate, empower) counts alongside the older corporate words:
 - leverage, utilize, facilitate, streamline, robust, seamless, delve, navigate,
   unlock, harness, foster, cultivate
 - fundamentally, essentially, ultimately, crucially, notably
 - landscape, ecosystem, paradigm, realm, tapestry, journey
+
+## Always forbidden (single hit, regardless of density)
+
+These are scrubbed on sight. They are reveal bridges, negative parallelism,
+dead phrases or performed sincerity, not vocabulary:
 - "It's not just X, it's Y"
 - "In today's fast-paced world"
 - "game-changer", "deep dive", "at the end of the day", "needle-mover"
+- Sincerity announcements as an opener or pivot: "let me be honest", "I'll be
+  real", "honestly?", "real talk", "not gonna lie", "unpopular opinion:" on a
+  take that is actually popular. State the fact flat instead.
 
 ## X-native style
 
@@ -72,7 +88,8 @@ Never use:
 - Generic praise in replies ("great thread!", "love this").
 - Overused openers: "This.", "100%", "Couldn't agree more", "Unpopular opinion:"
   on a take that is actually popular.
-- Rule of three ("faster, cheaper, better").
+- Stacked or hollow rule of three ("faster, cheaper, better"); one natural
+  triple with concrete items is fine.
 - Padding a one-line idea into a thread.
 - ALL CAPS first lines for intensity. Carry intensity with word choice.
 

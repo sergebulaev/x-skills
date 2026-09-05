@@ -62,8 +62,12 @@ when the result you are citing is someone else's.
    - One idea per tweet. Line breaks as beats.
    - 0-1 hashtag at the end, 0-1 emoji, none on a serious take.
    - No external link in the tweet (offer to put it in a reply).
-5. **Humanizer pass.** Strip em dashes, AI vocab, rule-of-three, generic
-   openers. Add a specific number or named entity where the claim allows it.
+5. **Humanizer pass.** Scrub 2026 AI vocab by density, cap em dashes (at
+   most one per tweet, never swap one for a period), break stacked triads,
+   generic openers and reveal bridges. Leave a single tweet's rhythm alone
+   (uniform rhythm wins on short posts; never insert a fragment for punch).
+   Add an odd-precision number with a named referent or a named entity where
+   the claim allows it. Canonical rules: `x-humanizer` V3.
 6. **Optional audit.** Invoke `x-humanizer --mode audit` for a pass-fail check.
 7. **Approval card.** Show: formula used, full draft, char count (note if emoji
    push it over 280), suggested posting window, primary goal.
@@ -88,7 +92,9 @@ rules:
 ## Anti-patterns (skill will refuse)
 
 - ALL CAPS first line for intensity. Carry intensity with word choice.
-- Em dashes anywhere.
+- Em dashes above the cap (more than one in a tweet), or an em dash swapped for a period.
+- "Here's what / here's how" or "Stop X, start Y" as the opener; "The result?" as a reveal.
+- Announced candor ("Let me be honest", "not gonna lie") with no dated fact behind it.
 - "Unpopular opinion:" on a take that is actually popular.
 - Padding a one-line idea with filler to look substantial.
 - Rule-of-three lists without specifics.

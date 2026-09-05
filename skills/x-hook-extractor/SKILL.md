@@ -34,8 +34,8 @@ the URL of the first tweet is best.
 - **Why it worked** psychologically and algorithmically
 - **Blank template** with `{slot}` markers matched to the original, ready for the
   user's topic
-- **Cautions:** anything in the original that would fail a 2026 audit (em dashes,
-  AI vocab, 3+ hashtags, link in tweet 1)
+- **Cautions:** anything in the original that would fail a 2026 audit (more
+  than one em dash in a tweet, an AI-vocab cluster, 3+ hashtags, link in tweet 1)
 
 ## Steps
 

@@ -79,7 +79,7 @@ tweets and threads auto-publish through Publora normally.
 
 ## Voice rules (baked into every skill)
 
-1. No em dashes (`—`), en dashes, or double dashes. Biggest AI tell.
+1. Em dashes (`—`) capped at one per tweet (about 1 per 100 words in a long Premium post); replace the excess with a comma, colon or `..`, never a period. No en dashes between clauses, no double dashes.
 2. Use `..` as a soft pause when rhythm calls for it.
 3. Capitalize all personal, company, and product names. Lowercase a brand reads
    as careless.

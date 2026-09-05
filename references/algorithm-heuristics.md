@@ -138,9 +138,9 @@ likes. Likes are social proof for the next reader but barely move distribution.
 ## Pre-publish checklist
 
 - [ ] First tweet stops the scroll on its own (no fold to lean on).
-- [ ] No em dashes (`—`), en dashes (`–`), or double dashes (`--`).
-- [ ] No AI vocabulary blacklist words (leverage, fundamentally, delve, etc.).
-- [ ] At least one specific number where the claim allows it.
+- [ ] At most one em dash (`—`) per tweet (never swap one for a period); no en dashes (`–`) between clauses or double dashes (`--`).
+- [ ] No AI vocabulary cluster (3+ markers in one tweet: leverage, fundamentally, significant, etc.).
+- [ ] At least one odd-precision number with a named referent where the claim allows it.
 - [ ] No external link in tweet 1 (move it to a reply or tweet 2+).
 - [ ] 0 or 1 hashtag, at the end.
 - [ ] 0-1 emoji, and only if it earns its place. None on a serious take.

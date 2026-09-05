@@ -61,7 +61,7 @@ Global voice rules: see root `SKILL.md` Voice rules. Additional skill-specific r
 - Lead the bio with the reader's benefit, not the user's job title.
 - One specific or one number in the bio where the account allows it.
 - Keep every rewrite inside the platform character limits (bio 160, name 50). Never ship a truncated bio.
-- No em dashes. No "leverage", "fundamentally", "game-changer".
+- At most one em dash in the bio (a 160-char bio rarely needs one). No "leverage", "fundamentally", "game-changer".
 
 ## Related skills
 

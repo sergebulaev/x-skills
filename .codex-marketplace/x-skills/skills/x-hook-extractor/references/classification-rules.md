@@ -58,8 +58,8 @@ Infer what the original optimized for from its shape and its visible metrics:
 ## Step 6: source audit
 
 Flag, do not copy:
-- em dashes, en dashes, double dashes
-- AI vocab (leverage, fundamentally, delve, etc.)
+- more than one em dash in a tweet; en dashes between clauses; double dashes
+- an AI vocab cluster (3+ markers in one tweet: leverage, fundamentally, significant, etc.)
 - 2+ hashtags or mid-sentence hashtags
 - an external link in tweet 1
 - a first line that does not stand alone
