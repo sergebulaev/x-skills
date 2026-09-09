@@ -118,6 +118,7 @@ Run from repo root:
 python3 -c "from lib import publish, illustrate, refine, PixfaroClient, parse_x_url, PubloraClient; print('OK')"
 python3 scripts/sync_codex_marketplace.py
 ls skills/ | wc -l        # must equal 9
+python3 scripts/check_frontmatter.py   # parses; a dir count does not prove a skill loads
 grep -rnP '\x{2014}|\x{2013}' skills/*/SKILL.md SKILL.md | grep -i '^.*description:'   # must be empty
 python3 -m json.tool .codex-plugin/plugin.json >/dev/null
 python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
