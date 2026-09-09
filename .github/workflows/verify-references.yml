@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check no credentials are tracked
+        run: python3 scripts/check_no_secrets.py
       - name: Install YAML parser
         run: python3 -m pip install --quiet pyyaml
       - name: Check SKILL.md frontmatter parses
