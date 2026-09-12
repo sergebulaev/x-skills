@@ -38,5 +38,9 @@ disclosure decision within 14 days.
 - Scripts in `lib/` and `scripts/` perform HTTP calls only to the Apify
   and Publora APIs and never execute shell commands built from remote
   content.
+- The image layer sends your prompt, and any brand overlay text you set, to
+  the Pixfaro API (`api.pixfaro.com`). It runs only when `PIXFARO_TOKEN` is
+  set; without it the skills draft a prompt for you to run yourself and make
+  no request.
 - Please do not test vulnerabilities against third-party services
   (X (Twitter), Apify, Publora) outside their own disclosure programs.
