@@ -33,6 +33,9 @@ import os
 import shlex
 import subprocess
 from typing import Any, Literal, Optional
+from ._env import load_env
+
+load_env()
 
 BackendName = Literal["publora", "manual", "diy"]
 PublishKind = Literal["post", "thread", "reply", "quote"]

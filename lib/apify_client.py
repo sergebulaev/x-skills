@@ -28,6 +28,7 @@ from collections import OrderedDict
 from typing import Any, Optional
 
 import requests
+from ._env import load_env
 
 ACTOR = "xquik~x-tweet-scraper"
 RUN_SYNC = "https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
@@ -86,6 +87,7 @@ def _tweet(t: dict) -> dict:
 
 class ApifyClient:
     def __init__(self, token: Optional[str] = None, timeout: int = 120):
+        load_env()
         self.token = token or os.environ.get("APIFY_TOKEN")
         self.timeout = timeout
         self._cache: "OrderedDict[str, tuple[float, Any]]" = OrderedDict()

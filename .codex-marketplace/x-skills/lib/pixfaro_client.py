@@ -35,6 +35,7 @@ from collections import OrderedDict
 from typing import Any, Optional
 
 import requests
+from ._env import load_env
 
 
 class PixfaroError(RuntimeError):
@@ -77,6 +78,7 @@ class PixfaroClient:
     """One method that matters: `generate`. Returns the hosted image URL."""
 
     def __init__(self, api_key: Optional[str] = None, timeout: float = 90.0):
+        load_env()
         self.api_key = api_key or os.getenv("PIXFARO_TOKEN") or os.getenv("PIXFARO_API_KEY")
         if not self.api_key:
             raise PixfaroError(
