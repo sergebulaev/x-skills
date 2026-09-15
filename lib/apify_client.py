@@ -141,19 +141,31 @@ class ApifyClient:
         ck = f"user:{h}:{max_items}"
         if not force_refresh and (c := self._cget(ck)) is not None:
             return c
-        rows = self._run({"twitterHandles": [h], "maxItems": max_items, "sort": "Latest"})
+        # No queryType here: the actor ignores it for account timelines.
+        rows = self._run({"twitterHandles": [h], "maxItems": max_items})
         out = [_tweet(t) for t in rows if isinstance(t, dict) and t.get("id")]
         self._cput(ck, out)
         return out
 
+    QUERY_TYPES = ("Top", "Latest", "Latest + Top")
+
     def fetch_niche_top(self, query: str, max_items: int = 30, sort: str = "Top",
                         force_refresh: bool = False) -> list[dict]:
         """Top/latest tweets for a niche query. Search reliability on X varies;
-        prefer fetch_user_tweets on known accounts when search returns nothing."""
+        prefer fetch_user_tweets on known accounts when search returns nothing.
+
+        `sort` is one of QUERY_TYPES and reaches the actor as `queryType`. It was
+        sent as `sort` until v1.0.29, which that actor has no input for, so every
+        search silently ran as Latest: measured on one query, `sort="Top"` gave a
+        median of 0 likes and overlapped the default 8 results in 10, while
+        `queryType="Top"` gave a median of 681 and overlapped none of them.
+        """
+        if sort not in self.QUERY_TYPES:
+            raise ValueError(f"sort must be one of {self.QUERY_TYPES}, got {sort!r}")
         ck = f"search:{query}:{max_items}:{sort}"
         if not force_refresh and (c := self._cget(ck)) is not None:
             return c
-        rows = self._run({"searchTerms": [query], "maxItems": max_items, "sort": sort})
+        rows = self._run({"searchTerms": [query], "maxItems": max_items, "queryType": sort})
         out = [_tweet(t) for t in rows if isinstance(t, dict) and t.get("id")]
         self._cput(ck, out)
         return out

@@ -22,3 +22,17 @@ jobs:
         run: python3 scripts/check_frontmatter.py
       - name: Check relative Markdown references
         run: python3 scripts/check_markdown_references.py
+      - name: Check Apify actor input keys against their schemas
+        # Exit 2 means the schemas were unreachable, not that the inputs are
+        # wrong. Apify being down must not read as a passing build, nor fail
+        # an unrelated PR, so it is reported and skipped.
+        run: |
+          set +e
+          python3 scripts/check_actor_inputs.py
+          status=$?
+          set -e
+          if [ "$status" -eq 2 ]; then
+            echo "::warning::Apify schemas unreachable, actor input check skipped"
+            exit 0
+          fi
+          exit "$status"
