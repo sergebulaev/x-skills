@@ -44,6 +44,13 @@ TEXT_SUFFIXES = {".md", ".py", ".json", ".yml", ".yaml", ".txt", ".sh", ".toml",
                  ".cfg", ".ini", ".env", ".example", ""}
 
 
+#: Files the user fills with their own material. They ship blank and must stay
+#: blank in git: a filled one is personal data, not a secret, so the credential
+#: patterns above are blind to it.
+PERSONAL_TEMPLATES = re.compile(r"(?:^|/)(voice-profile|story-bank)\.md$")
+FILLED_MARKER = re.compile(r"^\s*[-*]?\s*filled:\s*yes\b", re.M | re.I)
+
+
 def tracked_files() -> list[str]:
     out = subprocess.run(["git", "ls-files", "-z"], cwd=ROOT,
                          capture_output=True, text=True, check=True).stdout
@@ -63,6 +70,23 @@ def main() -> int:
         path = ROOT / rel
         if path.suffix.lower() not in TEXT_SUFFIXES or not path.is_file():
             continue
+        if PERSONAL_TEMPLATES.search(rel):
+            # A filled Voice Profile or Story Bank is not a credential, so no
+            # pattern below will ever notice it, and it holds a voice
+            # fingerprint, client names, figures, the lot. The templates ship
+            # blank and are meant to stay that way in git; fill yours and keep
+            # the fill out of a commit.
+            try:
+                head = path.read_text(encoding="utf-8")[:4000]
+            except (UnicodeDecodeError, OSError):
+                head = ""
+            if FILLED_MARKER.search(head):
+                problems.append(
+                    f"{rel}: this template is marked `filled: yes` and is tracked. "
+                    f"It holds your own material, not a credential, so nothing else "
+                    f"here would catch it. Restore the blank template with "
+                    f"`git checkout {rel}` and keep your filled copy outside the "
+                    f"repo, or add it to .gitignore.")
         try:
             text = path.read_text(encoding="utf-8")
         except (UnicodeDecodeError, OSError):
